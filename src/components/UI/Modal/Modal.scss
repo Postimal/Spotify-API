@@ -1,0 +1,10 @@
+.modal {
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  width: 100px;
+  height: 60px;
+  padding: 10px;
+  left: 50px;
+  transition: 0.1s;
+}

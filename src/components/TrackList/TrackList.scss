@@ -1,0 +1,12 @@
+.track-list-container {
+    padding: 0 0 0 20px;
+    margin-top: 30px;
+    max-height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(243, 108, 108) rgb(230, 208, 208);
+
+    &__name {
+        padding: 2px 0;
+    }
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body {
+  margin: 0;
+  color: #dddddd;
+  font-family: 'Roboto', sans-serif;
+}
+
+.playlist-container {
+  margin: 0;
+  padding: 0 0 5px 5px;
+  width: 180px;
+  background: #1c262b;
+
+  &-item {
+    position: relative;
+    list-style: none;
+    font-size: 12px;
+    padding-bottom: 25px;
+    background: #1c262b;
+
+    &-head {
+      display: flex;
+
+      &__image {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+      }
+
+      &__name {
+        padding: 0 0 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &__amount {
+      position: absolute;
+      top: 45px;
+      margin: 0;
+      left: 0px;
+    }
+  }
+}
+
+.show-more-button {
+  position: absolute;
+  right: 15px;
+  top: 45px;
+  padding: 3px;
+  transition: transform 0.15s;
+  &.close {
+    transform: rotate(-90deg);
+  }
+
+  &.open {
+    transform: rotate(90deg);
+  }
+  &-background-image {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 12px;
+  }
+}
